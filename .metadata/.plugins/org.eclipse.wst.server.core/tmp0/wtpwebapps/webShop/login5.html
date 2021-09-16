@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="EUC-KR">
+    <script type="text/javascript">
+        function fn_validate() {
+            var frmLogin = document.frmLogin;
+            var user_id = frmLogin.user_id.value;
+            var user_pw = frmLogin.user_pw.value;
+
+            if ((user_id.length == 0 || user_id == "") || (user_pw.length == 0 || user_pw == "")) {
+                alert("required id & pw");
+            } else {
+                frmLogin.method = "post";
+                frmLogin.action = "login5";
+                frmLogin.submit();
+            }
+        }
+    </script>
+    <title>Insert title here</title>
+</head>
+
+<body>
+    <form name="frmLogin" method="post" action="login5" enctype="UTF-8">
+        id :<input type="text" name="user_id"><br>
+        pw :<input type="password" name="user_pw"><br>
+        <input type="button" onclick="fn_validate()" value="login">
+        <input type="reset" value="reset">
+        <input type="hidden" name="user_address" value="seoul" />
+    </form>
+</body>
+
+</html>
