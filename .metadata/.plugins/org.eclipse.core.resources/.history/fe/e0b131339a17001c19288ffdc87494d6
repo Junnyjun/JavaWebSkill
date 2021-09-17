@@ -1,0 +1,69 @@
+package sec02.ex02;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
+
+public class MemberDAO2 {
+
+
+	private PreparedStatement stmt;
+	private Connection con;
+	private DataSource dataFactory;
+	
+	public MemberDAO2() {
+		try {
+			Context ctx = new InitialContext();
+			Context envContext = (Context) ctx.lookup("java:/comp/env");
+			dataFactory = (DataSource) envContext.lookup("jdbc/oracle");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public List<MemberVO> listMembers() {
+		List<MemberVO> list = new ArrayList<MemberVO>();
+		try {
+		
+			con = dataFactory.getConnection();
+			String Query = "select * from t_member";
+			System.out.println(Query);
+			stmt = con.prepareStatement(Query);
+			ResultSet rs = stmt.executeQuery();
+			while(rs.next()) {
+				String id = rs.getString("id");
+				String pw = rs.getString("pw");
+				String name = rs.getString("name");
+				String email = rs.getString("email");
+				Date joinDate = rs.getDate("joinDate");
+				
+				MemberVO member = new MemberVO();
+				member.setId(id);
+				member.setPw(pw);
+				member.setName(name);
+				member.setEmail(email);
+				member.setJoinDate(joinDate);
+				list.add(member);
+				
+			}
+			rs.close();
+			stmt.close();
+			con.close();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		return list;
+		
+	}
+	
+
+}

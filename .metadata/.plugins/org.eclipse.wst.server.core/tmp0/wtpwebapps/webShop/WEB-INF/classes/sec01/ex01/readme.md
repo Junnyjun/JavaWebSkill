@@ -17,7 +17,7 @@ servlet & servletconfig 인터페이스를 구현하여 제공
 |protect service|request를 public service 전달받아 doXXX 메서드를 호출 |
 |public service|클라이언트의 request를 protect service 전달합니다 |
 
-
+***
 **생명주기** 
 |생명주기 단계|메서드 특징 |
 |--|--|
@@ -38,8 +38,7 @@ servlet & servletconfig 인터페이스를 구현하여 제공
 -  서블릿이 기능을 수행 하고 메모리에서 소멸될 때 호출
  - 서블릿의 마무리 작업을 주로 수행
 
-|      |       |
-|--|--|
+
 
 다음장 ..!
 [Ex 1-2 서블릿 기초](../ex02) 

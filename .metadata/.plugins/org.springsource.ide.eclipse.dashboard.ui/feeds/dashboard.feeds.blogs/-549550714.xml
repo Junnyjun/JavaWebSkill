@@ -5,7 +5,20 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2021-09-15T14:00:00Z</updated>
+  <updated>2021-09-17T04:00:00Z</updated>
+  <entry>
+    <title>A Bootiful Podcast: Dr. Mark Pollack on Physics, Spring Cloud Data Flow, Spring Data, Spring.NET, Spring XD, and so much more</title>
+    <link rel="alternate" href="https://spring.io/blog/2021/09/16/a-bootiful-podcast-dr-mark-pollack-on-physics-spring-cloud-data-flow-spring-data-spring-net-spring-xd-and-so-much-more" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2021-09-17:4547</id>
+    <updated>2021-09-17T04:00:00Z</updated>
+    <content type="html">&lt;p&gt;Hi, Spring fans! Welcome to another installment of &lt;em&gt;A Bootiful Podcast&lt;/em&gt;. In this installment, &lt;a href="http://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to the one, the only, the amazing and &lt;a href="https://twitter.com/MarkPollack"&gt;inimitable Dr. Mark Pollack (@MarkPollack)&lt;/a&gt; about physics, Spring.NET, Spring Data, Spring XD, Spring Cloud Data Flow, and so much more! &lt;/p&gt;
+&lt;iframe title="The Good Dr. Mark Pollack on Spring.NET, physics, Spring Data, Spring XD, Spring Cloud Data Flow, and so much more" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=f8shp-10e0e12-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=auto&amp;btn-skin=7"&gt;&lt;/iframe&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>Spring Tools 4.12.0 released</title>
     <link rel="alternate" href="https://spring.io/blog/2021/09/15/spring-tools-4-12-0-released" />
@@ -988,21 +1001,6 @@ class ServiceConfiguration {&#xD;
     <updated>2021-08-19T12:00:00Z</updated>
     <content type="html">&lt;p&gt;Hi, Spring fans! In this installment, &lt;a href="https://twitter.com/starbuxman"&gt;Josh Long (@starbuxman)&lt;/a&gt; talks to Microsoft&amp;rsquo;s &lt;a href="http://twitter.com/akalirong"&gt;Rome Li (@akalirong)&lt;/a&gt; on his work supporting Microsoft Azure from IntelliJ, Visual Studio, Maven, Eclipse, and Visual Studio Code.&lt;/p&gt;
 &lt;iframe title="Microsoft Azure engineering manager Rome Li on his work supporting Microsoft Azure in IntelliJ, Visual Studio, Maven, Eclipse, and Visual Studio Code" allowtransparency="true" height="150" width="100%" style="border: none; min-width: min(100%, 430px);" scrolling="no" data-name="pb-iframe-player" src="https://www.podbean.com/player-v2/?i=kgiuq-10bb067-pb&amp;from=pb6admin&amp;share=1&amp;download=1&amp;rtl=0&amp;fonts=Arial&amp;skin=1&amp;font-color=&amp;btn-skin=7"&gt;&lt;/iframe&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Boot 2.4.10 is now available</title>
-    <link rel="alternate" href="https://spring.io/blog/2021/08/19/spring-boot-2-4-10-is-now-available" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Andy Wilkinson</name>
-    </author>
-    <id>tag:spring.io,2021-08-19:4521</id>
-    <updated>2021-08-19T11:06:27Z</updated>
-    <content type="html">&lt;p&gt;On behalf of the team and everyone who has contributed, I&amp;rsquo;m happy to announce that Spring Boot &lt;code&gt;2.4.10&lt;/code&gt; has been released and is now available from Maven Central.&lt;/p&gt;
-&lt;p&gt;This release includes &lt;a href="https://github.com/spring-projects/spring-boot/releases/tag/v2.4.10"&gt;29 bug fixes, documentation improvements, and dependency upgrades&lt;/a&gt;. Thanks to all those who have contributed with issue reports and pull requests.&lt;/p&gt;&lt;h3&gt;&lt;a href="#how-can-you-help" class="anchor" name="how-can-you-help"&gt;&lt;/a&gt;How can you help?&lt;/h3&gt;
-&lt;p&gt;If you&amp;rsquo;re interested in helping out, check out the &lt;a href="https://github.com/spring-projects/spring-boot/labels/status%3A%20ideal-for-contribution"&gt;&amp;ldquo;ideal for contribution&amp;rdquo; tag&lt;/a&gt; in the issue repository. If you have general questions, please ask on &lt;a href="https://stackoverflow.com"&gt;stackoverflow.com&lt;/a&gt; using the &lt;a href="https://stackoverflow.com/tags/spring-boot"&gt;&lt;code&gt;spring-boot&lt;/code&gt; tag&lt;/a&gt; or chat with the community on &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://spring.io/projects/spring-boot/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-boot/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-boot/docs/2.4.10/reference/html"&gt;Documentation&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-boot"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-boot"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

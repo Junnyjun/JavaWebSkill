@@ -18,7 +18,7 @@
 |getRequestURI|URL의 컨텍스트 이름과 파일 경로까지 반환|
 |getSession|현재의 요청과 연관된 세션을 반환합니다. 없을땐 새로 만들어서 반환|
 
-
+***
 **ServletResponse의 여러가지 메서드** 
 |메서드명|기능  |
 |--|--|
@@ -28,6 +28,8 @@
 |getHeaderNames|현재 응답의 헤더에 포함된 naem을 얻어옵니다|
 |sendRedirect|클라이언트에게 리다이렉트 읍답을 보낸 후 특정 URL로 재요청|
 |getPathInfo|요청시 보낸 URL과 추가 경로정보를 반환|
+
+***
 
   2. form
  - [ ] name :  form 이름 지정 
@@ -45,4 +47,4 @@
 
 
 다음장 ..!
-[Ex 1-2 서블릿 기초](../ex03) 
+[Ex 1-3 데이터 이동](../ex03) 
