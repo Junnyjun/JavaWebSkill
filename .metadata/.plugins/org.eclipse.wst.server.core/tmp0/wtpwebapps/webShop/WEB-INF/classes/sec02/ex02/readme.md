@@ -1,5 +1,5 @@
 
-#  Ex2-1 비즈니스 로직 처리
+#  Ex2-2 데이터 등록&수정
 
 *Statement 보다 미리 쿼리를 컴파일 할 수 있는 PreparedStatement 인터페이스를 사용하자.* 
  - [ ] PreparedStatement 인터페이스는 Statement를 그대로 사용 할 수 있다.
@@ -41,4 +41,4 @@
 
 다음장 ..!
 
-[Ex 3-1 서블릿 포워드기능](../../sec03/ex01)
+[Ex 3-1 서블릿 포워드기능](../../sec03/ex02)
