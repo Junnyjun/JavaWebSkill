@@ -3,3 +3,6 @@
 127.0.0.1 - - [19/Sep/2021:00:52:18 +0900] "GET / HTTP/1.1" 404 807
 0:0:0:0:0:0:0:1 - - [19/Sep/2021:00:52:23 +0900] "GET /webShop/sec04/login.html HTTP/1.1" 200 676
 0:0:0:0:0:0:0:1 - - [19/Sep/2021:00:52:26 +0900] "POST /webShop/sec04/loginRewriting HTTP/1.1" 404 843
+127.0.0.1 - - [19/Sep/2021:02:05:51 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [19/Sep/2021:02:06:11 +0900] "GET /webShop/SetCookieValue HTTP/1.1" 200 52
+0:0:0:0:0:0:0:1 - - [19/Sep/2021:02:06:19 +0900] "GET /webShop/GetCookieValue HTTP/1.1" 200 101
