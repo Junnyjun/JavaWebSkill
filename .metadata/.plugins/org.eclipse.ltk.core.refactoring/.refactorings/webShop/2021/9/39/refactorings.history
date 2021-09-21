@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;webShop/src/main/webapp/sec05.ex01&apos; to &apos;sec05&apos;" description="Rename resource &apos;sec05.ex01&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/sec05.ex01" name="sec05" stamp="1632052727769" updateReferences="true"/>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;webShop/src/main/webapp/sec05.ex01&apos; to &apos;sec05&apos;" description="Rename resource &apos;sec05.ex01&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/sec05.ex01" name="sec05" stamp="1632052727769" updateReferences="true"/>&#x0A;<refactoring accessors="true" comment="Delete element from project &apos;webShop&apos;&#x0D;&#x0A;- Original project: &apos;webShop&apos;&#x0D;&#x0A;- Original element: &apos;sec06.ex01.FileUpload.java&apos;" description="Delete element" element1="/src\/main\/java&lt;sec06.ex01{FileUpload.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1632221183118" subPackages="false" version="1.0"/>
 </session>

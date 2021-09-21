@@ -10,26 +10,27 @@ import javax.servlet.http.HttpSessionListener;
  */
 @WebListener
 public class LoginImpl2 implements HttpSessionListener {
+	
+	String user_id;
+	String user_pw;
+	static int total_user=0;
+	
 
-    /**
-     * Default constructor. 
-     */
-    public LoginImpl2() {
-        // TODO Auto-generated constructor stub
+    public LoginImpl2(String user_id, String user_pw) {
+		this.user_id = user_id;
+		this.user_pw = user_pw;
+	}
+
+    @Override
+	public void sessionCreated(HttpSessionEvent se)  { 
+         System.out.println("create session");
+         ++total_user;
     }
 
-	/**
-     * @see HttpSessionListener#sessionCreated(HttpSessionEvent)
-     */
-    public void sessionCreated(HttpSessionEvent se)  { 
-         // TODO Auto-generated method stub
-    }
 
-	/**
-     * @see HttpSessionListener#sessionDestroyed(HttpSessionEvent)
-     */
     public void sessionDestroyed(HttpSessionEvent se)  { 
-         // TODO Auto-generated method stub
+    	System.out.println("destroy session");
+        --total_user;
     }
 	
 }
