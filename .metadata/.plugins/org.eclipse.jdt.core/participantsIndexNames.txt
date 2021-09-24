@@ -11,3 +11,5 @@ C:\새 폴더\webShop\eclipseWorskSpace\.metadata\.plugins\org.eclipse.jst.jsp.core
 \webShop\src\main\java
 C:\새 폴더\webShop\eclipseWorskSpace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3595539051.index
 \webShop\src\main\java
+C:\새 폴더\webShop\eclipseWorskSpace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\782199884.index
+\webShop\src\main\java
