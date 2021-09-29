@@ -54,4 +54,4 @@ id 에 대한 select 문을 실행한후 Map 반환
 
 다음장 ..!
 
-[Ex 6-4 Spring + mybatis](../ex05)
+[Ex 6-5 Spring + mybatis](../ex05)

@@ -15,53 +15,47 @@ import org.springframework.web.bind.annotation.RequestParam;
 import net.coobird.thumbnailator.Thumbnails;
 
 /*@Controller*/
-public class FileDownloadController {
+public class FileDownloadControllerThumbNail {
 	private static String CURR_IMAGE_REPO_PATH = "c:\\spring\\image_repo";
-	
+
 	@RequestMapping("/download")
-	protected void download(@RequestParam("imageFileName") String imageFileName,
-			                 HttpServletResponse response) throws Exception {
+	protected void download(@RequestParam("imageFileName") String imageFileName, HttpServletResponse response)
+			throws Exception {
 		OutputStream out = response.getOutputStream();
 		String filePath = CURR_IMAGE_REPO_PATH + "\\" + imageFileName;
 		File image = new File(filePath);
 		int lastIndex = imageFileName.lastIndexOf(".");
-		String fileName = imageFileName.substring(0,lastIndex);
-		File thumbnail = new File(CURR_IMAGE_REPO_PATH+"\\"+"thumbnail"+"\\"+fileName+".png");
-		if (image.exists()) { 
+		String fileName = imageFileName.substring(0, lastIndex);
+		File thumbnail = new File(CURR_IMAGE_REPO_PATH + "\\" + "thumbnail" + "\\" + fileName + ".png");
+		if (image.exists()) {
 			thumbnail.getParentFile().mkdirs();
-		    Thumbnails.of(image).size(50,50).outputFormat("png").toFile(thumbnail);
+			Thumbnails.of(image).size(50, 50).outputFormat("png").toFile(thumbnail);
 		}
 
 		FileInputStream in = new FileInputStream(thumbnail);
 		byte[] buffer = new byte[1024 * 8];
 		while (true) {
-			int count = in.read(buffer); // ¹öÆÛ¿¡ ÀÐ¾îµéÀÎ ¹®ÀÚ°³¼ö
-			if (count == -1) // ¹öÆÛÀÇ ¸¶Áö¸·¿¡ µµ´ÞÇß´ÂÁö Ã¼Å©
+			int count = in.read(buffer); // ï¿½ï¿½ï¿½Û¿ï¿½ ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ú°ï¿½ï¿½ï¿½
+			if (count == -1) // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ß´ï¿½ï¿½ï¿½ Ã¼Å©
 				break;
 			out.write(buffer, 0, count);
 		}
 		in.close();
 		out.close();
 	}
-	
-/*	
-	@RequestMapping("/download")
-	protected void download(@RequestParam("imageFileName") String imageFileName,
-			                 HttpServletResponse response) throws Exception {
-		OutputStream out = response.getOutputStream();
-		String filePath = CURR_IMAGE_REPO_PATH + "\\" + imageFileName;
-		File image = new File(filePath);
-		int lastIndex = imageFileName.lastIndexOf(".");
-		String fileName = imageFileName.substring(0,lastIndex);
-		File thumbnail = new File(CURR_IMAGE_REPO_PATH+"\\"+"thumbnail"+"\\"+fileName+".png");
-		if (image.exists()) { 
-			Thumbnails.of(image).size(50,50).outputFormat("png").toOutputStream(out);
-		}else {
-			return;
-		}
-		byte[] buffer = new byte[1024 * 8];
-		out.write(buffer);
-		out.close();
-	}
-	*/
+
+	/*
+	 * @RequestMapping("/download") protected void
+	 * download(@RequestParam("imageFileName") String imageFileName,
+	 * HttpServletResponse response) throws Exception { OutputStream out =
+	 * response.getOutputStream(); String filePath = CURR_IMAGE_REPO_PATH + "\\" +
+	 * imageFileName; File image = new File(filePath); int lastIndex =
+	 * imageFileName.lastIndexOf("."); String fileName =
+	 * imageFileName.substring(0,lastIndex); File thumbnail = new
+	 * File(CURR_IMAGE_REPO_PATH+"\\"+"thumbnail"+"\\"+fileName+".png"); if
+	 * (image.exists()) {
+	 * Thumbnails.of(image).size(50,50).outputFormat("png").toOutputStream(out);
+	 * }else { return; } byte[] buffer = new byte[1024 * 8]; out.write(buffer);
+	 * out.close(); }
+	 */
 }
